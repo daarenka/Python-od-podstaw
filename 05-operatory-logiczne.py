@@ -1,3 +1,5 @@
+from operator import truediv
+
 isSkyBlue = True
 isPythonDifficult = False
 
@@ -7,7 +9,19 @@ isPythonDifficult = False
 a = 5
 b = 2
 
-print(a > b and b > 0)
-print(a > b and b >3)
-print(a > 10 or b > 0)
-print(a > 10 or (b > 0 and a> b))
+# print(a > b and b > 0)
+# print(a > b and b >3)
+# print(a > 10 or b > 0)
+# print(a > 10 or (b > 0 and a> b))
+
+c = 4
+print(c % 2 == 0) # czy jest to liczba parzysta - zwraca True albo False (liczba nieparzysta)
+
+print(not c % 2 == 0) #odwrotna logika - True dla nieparzystej, False dla parzystej
+
+user_logged_in = True
+if user_logged_in:
+    print("Użytkownik zalogowany")
+
+if not user_logged_in:
+    print("Użytkownik niezalogowany")
